@@ -1,0 +1,424 @@
+html{
+    background-color: #1f1f1f;
+}
+
+h1{
+    font-size: 96px;
+    text-align: center;
+    color: #FFF3F0;
+    font-family: "Dosis", sans-serif;
+    font-variation-settings: "wght" 100;
+}
+
+h2{
+    font-size: 64px;
+    text-align: center;
+    color: #FFF3F0;
+    font-family: "Dosis", sans-serif;
+    font-variation-settings: "wght" 100;
+}
+
+p{
+    font-size: 150%;
+    text-align: center;
+    color: #FFF3F0;
+    font-family: "Dosis", sans-serif;
+    font-variation-settings: "wght" 100;
+}
+
+h3{
+    margin-top: -3vh;
+    font-size: 48px;
+    text-align: center;
+    color: #7280FF;
+    font-family: "Hammersmith One", sans-serif;
+}
+
+#Navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #1f1f1f;
+    padding: 1em 2em;
+    box-shadow: 0em 2em 1em rgba(10, 10, 10, 0.5);
+    z-index: 1000;
+}
+
+#Navigation h3 {
+    color: #3b5eff;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#cv-button {
+    background-color: #242F42;
+    color: #3b5eff;
+    padding: 0.6em 1.4em;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: "Dosis", sans-serif;
+    font-size: 1rem;
+    border: 2px solid #3b5eff;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+
+#cv-button:hover {
+    background-color: #3b5eff;
+    color: #242F42;
+    box-shadow: 0 0 10px rgba(59, 94, 255, 0.5);
+}
+
+
+#cv-button:hover {
+    background-color: #ddd;
+}
+
+
+#Presentation{
+    padding-top: 10em;
+}
+
+#Presentation div{
+    
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#Presentation div article {
+    width: 40%;
+}
+
+#Presentation div article:first-child {
+    display: grid;
+    
+}
+
+#Presentation article p{
+    text-align: initial;
+}
+
+p strong {
+    font-weight: 600;
+    font-variation-settings: "wght" 600;
+    color: #7280FF;
+    font-style: normal;
+}
+
+#Presentation div article div figure{
+    width: 20vh;
+    background-color: #242F42;
+    border-radius: 12px;
+    height: 20vh;
+    justify-content: center;
+    text-align: center;
+    padding: 2vh;
+}
+
+#Presentation div article div figure img{
+    width: 8vh;
+    padding-bottom: 3vh;
+}
+
+#Presentation div article div figure figcaption {
+    color: #FFF3F0;
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 20px;
+}
+
+#Presentation div article div img:last-child {
+    width: 20vw;
+    border-radius: 20px;
+    margin: 10vh 0;
+    
+}
+
+
+#Softskills {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#Softskills > div {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+#Softskills article {
+    background-color: #242F42;
+    border-radius: 20px;
+    width: 20vw;
+    padding: 20px;
+    color: #FFF3F0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+#Softskills article.visible {
+    opacity: 0;
+    transform: translateY(0);
+}
+
+#Softskills article h3 {
+    margin-top: 0;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#Softskills article div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+#Softskills figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+#Softskills figure img {
+    width: 7vh;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+#Softskills figcaption {
+    color: #FFF3F0;
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+#Experience {
+    text-align: center;
+}
+
+#Experience h4 {
+    color: #FFF3F0;
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 35px;
+    text-align: initial;
+}
+
+
+
+#container > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5vw;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: #242F42;
+    color: #FFF3F0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    min-width: 20vw;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box h4 {
+    margin-top: 0;
+}
+
+.box p {
+
+    margin-top: 0;
+    text-align: initial;
+}
+
+#Experience {
+    text-align: center;
+}
+
+#Experience h4 {
+    color: #FFF3F0;
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 35px;
+    text-align: initial;
+}
+
+
+
+
+#Projets > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vw;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+#Projets article.project {
+  background-color: #242F42;
+  border-radius: 16px;
+  padding: 1.5em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 28vw; /* largeur relative */
+  min-width: 250px; /* minimum taille */
+}
+
+#Projets article.project:hover {
+  transform: translateY(-5px);
+}
+
+#Projets figure {
+  margin: 0;
+}
+
+#Projets figure img {
+  width: 100%;
+  height: 20vh;
+  border-radius: 12px;
+  margin-bottom: 1em;
+  object-fit: cover;
+}
+
+/* MODAL STYLES */
+
+#modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(31, 31, 31, 0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 2vh 2vw;
+}
+
+#modalContent {
+  background-color: #242F42;
+  padding: 2em;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 90vw;
+  color: #FFF3F0;
+  font-family: "Dosis", sans-serif;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+  text-align: center;
+}
+
+#modalContent img {
+  width: 80vw;
+  max-width: 500px;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 1em;
+  object-fit: contain;
+}
+
+#modalContent h4 {
+  font-family: "Hammersmith One", sans-serif;
+  color: #7280FF;
+  margin: 0.5em 0;
+}
+
+#modalClose {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background: none;
+  border: none;
+  font-size: 1.8em;
+  color: #7280FF;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#modalContent p {
+  margin-top: 1em;
+  line-height: 1.4em;
+}
+
+/* Responsive adjustment */
+
+@media (max-width: 768px) {
+  #Projets article.project {
+    width: 80vw; /* pleine largeur sur mobile */
+    height: auto;
+  }
+
+  #Projets figure img {
+    height: 25vh;
+  }
+}
+
+
+
+#contact div {
+    margin-bottom: 5vh;
+    align-items: center;
+}
+
+#contact article{
+    display: flex;
+}
+
+#contact figure {
+    padding: 2vh 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color: #242F42;
+    border-radius: 20px;
+}
+
+#contact figure img {
+    width: 5vw;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+#contact figcaption {
+    color: #FFF3F0;
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+#contact div article figure p {
+    color: #3b5eff;
+}
+
+#modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 120vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Fond noir semi-transparent */
+  display: none; /* Affiché dynamiquement par JS */
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Assure qu'il est au-dessus de tout */
+}
