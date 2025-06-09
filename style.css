@@ -422,3 +422,77 @@ p strong {
   justify-content: center;
   z-index: 1000; /* Assure qu'il est au-dessus de tout */
 }
+
+.listePerso {
+  list-style: none;
+  display: flex;
+  position: fixed;
+  top: 40%;
+  flex-direction: column;
+  background-color: #242F42;
+  height: auto;
+  justify-content: space-around;
+  border-radius: 20px;
+  padding: 10px;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.listePerso li {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.listePerso li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+/* Le label apparaît au survol */
+.listePerso li a::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:#242F42;
+  color:#FFF3F0;
+  padding: 4px 8px;
+  border-radius: 0 20% 20% 0;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.listePerso li a:hover::after {
+  opacity: 1;
+}
+
+/* Icônes spécifiques */
+.listePerso li.debut a {
+  background-image: url('images/home.png');
+}
+.listePerso li.Intro a {
+  background-image: url('images/Silhouete.png');
+}
+.listePerso li.Comp a {
+  background-image: url('images/book.png');
+}
+.listePerso li.Parc a {
+  background-image: url('images/parcours.png');
+}
+.listePerso li.Proj a {
+  background-image: url('images/suitcase.png');
+}
+.listePerso li.Cont a {
+  background-image: url('images/Conversation.png');
+}
