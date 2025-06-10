@@ -40,6 +40,7 @@ h3{
     align-items: center;
     position: sticky;
     top: 0;
+    margin: 1em 0;
     background-color: #1f1f1f;
     padding: 1em 2em;
     box-shadow: 0em 2em 1em rgba(10, 10, 10, 0.5);
